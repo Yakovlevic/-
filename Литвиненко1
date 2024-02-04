@@ -1,0 +1,12 @@
+# 2 задание
+def sum_of_digits(number):
+    sum = 0
+    while number > 0:
+        digit = number % 10
+        sum += digit
+        number = number // 10
+    return sum
+
+input_number = 4939393
+result = sum_of_digits(input_number)
+print(f"Сумма цифр числа {input_number} равна {result}")
